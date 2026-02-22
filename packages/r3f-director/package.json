@@ -22,19 +22,24 @@
     "dev": "tsup --watch"
   },
   "peerDependencies": {
+    "@react-three/drei": ">=9",
     "@react-three/fiber": ">=8",
-    "react": ">=18",
-    "react-dom": ">=18",
-    "three": ">=0.150"
+    "@react-three/postprocessing": ">=3",
+    "postprocessing": ">=6",
+    "react": ">=18 <20",
+    "react-dom": ">=18 <20",
+    "three": ">=0.150",
+    "three-stdlib": ">=2"
   },
   "devDependencies": {
     "@react-three/fiber": "^9.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.183.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "three": "^0.183.1",
-    "tsup": "^8.0.0",
-    "typescript": "^5.0.0"
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
   }
 }

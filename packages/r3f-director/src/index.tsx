@@ -1,22 +1,25 @@
 //packages/r3f-director/src/index.ts
 
+"use client";
+
 import type { ReactNode } from "react";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, type CanvasProps } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 export const Hello = () => {
   return (
     <div
-      style={{
-        backgroundColor: "black",
-        color: "white",
-        padding: "10px 10px",
-      }}
+      style={{ backgroundColor: "black", color: "white", padding: "10px 10px" }}
     >
       Hello from r3f-director!
     </div>
   );
 };
 
-export function Scene({ children }: { children: ReactNode }) {
-  return <Canvas>{children}</Canvas>;
-}
+export const Controls = () => {
+  return (
+    <>
+      <OrbitControls autoRotate />
+    </>
+  );
+};
