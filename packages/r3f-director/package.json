@@ -1,6 +1,15 @@
 {
   "name": "@happyphysicsclub/r3f-director",
   "version": "0.1.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happyphysicsclub/r3f-director.git"
+  },
+  "homepage": "https://github.com/happyphysicsclub/r3f-director#readme",
+  "bugs": {
+    "url": "https://github.com/happyphysicsclub/r3f-director/issues"
+  },
   "private": false,
   "type": "module",
   "sideEffects": false,
