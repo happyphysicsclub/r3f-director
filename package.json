@@ -1,0 +1,20 @@
+{
+  "name": "r3f-director",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:demo": "cd apps/demo-next && yarn dev",
+    "dev:pkg": "cd packages/r3f-director && yarn dev",
+    "dev": "concurrently -k -n demo,pkg \"yarn dev:demo\" \"yarn dev:pkg\"",
+    "build:pkg": "cd packages/r3f-director && yarn build",
+    "build:demo": "cd apps/demo-next && yarn build",
+    "build": "yarn build:pkg && yarn build:demo"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
